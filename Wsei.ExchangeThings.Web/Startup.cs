@@ -26,7 +26,7 @@ namespace Wsei.ExchangeThings.Web
             });
 
             services.AddDbContext<ExchangesDbContext>(options => options
-                .UseSqlServer(Configuration.GetConnectionString("ExchangeThings"))
+                .UseSqlite(Configuration.GetConnectionString("ExchangeThings"))
             );
 
             services.AddTransient<MyCustomActionFilter>();
