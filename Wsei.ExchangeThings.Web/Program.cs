@@ -22,6 +22,5 @@ namespace Wsei.ExchangeThings.Web
                 {
                     webBuilder.UseStartup<Startup>();
                 });
-
     }
 }
